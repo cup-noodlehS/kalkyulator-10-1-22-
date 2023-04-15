@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.body {
+  height: 100vh;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  color: white;
+  background-color: black;
+}
+.workspace {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 1rem;
+  color: rgb(189, 126, 8);
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: rgb(31, 30, 30);
+}
+h1 span {
+  color: white;
+}
+.output {
+  width: 90%;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+.show {
+  font-size: 1.5rem;
+}
+.container {
+  min-width: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  background-color: rgb(15, 15, 15);
+  border-radius: 20px 20px 0 0;
+  margin-top: 30px;
+}
+.item {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zero {
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
+.blue {
+  color: rgb(189, 126, 8);
+}
+
+.item:active {
+  background-color: rgb(26, 25, 25);
+  border-radius: 10%;
+}
+
+.opp {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.349);
+  transform: translate(0, 1rem);
+  font-size: 0.5rem;
+}
